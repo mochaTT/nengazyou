@@ -33,17 +33,19 @@
    embedded
    arjs="trackingMethod: best; sourceType: webcam; debugUIEnabled: false;"
    >
+    <a-assets>
+      <a-asset-item id="mochi" src="mochi.glb" scale="1 1 1"></a-asset-item>
+    </a-assets>
     <a-nft
       type="nft"
-      url="https://github.com/mochaTT/nengazyou/tree/main/Assets/年賀状"
+      url="image"
       smooth="true"
       smoothCount="10"
       smoothTolerance=".01"
       smoothThreshold="5"
     >
       <a-entity
-        gltf-model="https://github.com/mochaTT/nengazyou/tree/main/Assets/鏡餅.gltf"
-        scale="5 5 5"
+        gltf-model="#mochi"
         position="50 150 0"
       >
       </a-entity>
